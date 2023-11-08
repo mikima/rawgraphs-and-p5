@@ -6,6 +6,7 @@ import { visualOptions } from './visualOptions'
 import styles from '../styles.raw.css'
 
 export default {
+  type:'div',
   metadata,
   dimensions,
   mapData,

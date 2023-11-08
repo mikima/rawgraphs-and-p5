@@ -10,9 +10,7 @@ export function render(
   originalData,
   styles
 ) {
-  console.log(node)
-  let container = node.parentNode
-  container.removeChild(node)
+
   // Create a p5 instance
   let sketch = function (p) {
     let particles = []
@@ -72,15 +70,5 @@ export function render(
     }
   }
 
-  new p5(sketch, container)
-  // d3.select(node)
-  //   .selectAll('text')
-  //   .data(data)
-  //   .enter()
-  //   .append('text')
-  //   .attr('fill', visualOptions.color)
-  //   .attr('x', (_, i) => 35 + i * 10)
-  //   .attr('y', (_, i) => 35 + i * 25)
-  //   .text((row) => row.name)
-  //   .styles(styles.coolText)
+  new p5(sketch, node)
 }
