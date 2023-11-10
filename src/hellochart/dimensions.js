@@ -6,4 +6,11 @@ export const dimensions = [
     required: true,
     operation: 'get',
   },
+  {
+    id: 'speed',
+    name: 'Speed',
+    validTypes: ['number'],
+    required: false,
+    operation: 'get',
+  },
 ]
